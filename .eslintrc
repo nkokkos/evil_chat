@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint-config-airbn-base", "prettier"],
+  "extends": ["eslint-config-airbnb-base", "prettier"],
 
   "plugins": ["prettier"],
 
