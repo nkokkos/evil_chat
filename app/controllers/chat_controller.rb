@@ -1,5 +1,5 @@
 class ChatController < ApplicationController
-  before action: autheticate!
+  before action: authenticate!
 
   # display last 20 messages
   def show
