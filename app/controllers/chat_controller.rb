@@ -1,5 +1,5 @@
 class ChatController < ApplicationController
-  before action: authenticate!
+  before_action :authenticate!
 
   # display last 20 messages
   def show
@@ -10,7 +10,7 @@ class ChatController < ApplicationController
   
   # redirect user to /login if he hasn't picked a username yet
   def authenticate!
-    redirect_to login login_path unless session[:username]
+    redirect_to login_path unless session[:username]
   end
 
 end
